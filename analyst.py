@@ -14,6 +14,8 @@ def standings():
                 "conference": record['conferenceName'],
                 "division": record['divisionName'],
                 "points": record['points'],
+                "homePoints": record['homePoints'],
+                "roadPoints": record['roadPoints'],
                 "gamesPlayed": record['gamesPlayed'],
                 "wins": record['wins'],
                 "homeWins:": record['homeWins'],
@@ -22,6 +24,8 @@ def standings():
                 "homeLoses": record['homeLosses'],
                 "roadLoses": record['roadLosses'],
                 "OtWins": record['otLosses'],
+                "goalDifferential": record['goalDifferential'],
+                "goalAgainst": record['goalAgainst'],
                 
             }
             equipes_stats.append(equipe_info)
