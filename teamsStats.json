@@ -1,6 +1,7 @@
 [
     {
         "team": "Winnipeg Jets",
+        "abrev": "WPG",
         "conference": "Western",
         "division": "Central",
         "points": 116,
@@ -19,6 +20,7 @@
     },
     {
         "team": "Washington Capitals",
+        "abrev": "WSH",
         "conference": "Eastern",
         "division": "Metropolitan",
         "points": 111,
@@ -37,6 +39,7 @@
     },
     {
         "team": "Vegas Golden Knights",
+        "abrev": "VGK",
         "conference": "Western",
         "division": "Pacific",
         "points": 110,
@@ -55,6 +58,7 @@
     },
     {
         "team": "Toronto Maple Leafs",
+        "abrev": "TOR",
         "conference": "Eastern",
         "division": "Atlantic",
         "points": 108,
@@ -73,6 +77,7 @@
     },
     {
         "team": "Dallas Stars",
+        "abrev": "DAL",
         "conference": "Western",
         "division": "Central",
         "points": 106,
@@ -91,6 +96,7 @@
     },
     {
         "team": "Los Angeles Kings",
+        "abrev": "LAK",
         "conference": "Western",
         "division": "Pacific",
         "points": 105,
@@ -109,6 +115,7 @@
     },
     {
         "team": "Tampa Bay Lightning",
+        "abrev": "TBL",
         "conference": "Eastern",
         "division": "Atlantic",
         "points": 102,
@@ -127,6 +134,7 @@
     },
     {
         "team": "Colorado Avalanche",
+        "abrev": "COL",
         "conference": "Western",
         "division": "Central",
         "points": 102,
@@ -145,6 +153,7 @@
     },
     {
         "team": "Edmonton Oilers",
+        "abrev": "EDM",
         "conference": "Western",
         "division": "Pacific",
         "points": 101,
@@ -163,6 +172,7 @@
     },
     {
         "team": "Carolina Hurricanes",
+        "abrev": "CAR",
         "conference": "Eastern",
         "division": "Metropolitan",
         "points": 99,
@@ -181,6 +191,7 @@
     },
     {
         "team": "Florida Panthers",
+        "abrev": "FLA",
         "conference": "Eastern",
         "division": "Atlantic",
         "points": 98,
@@ -199,6 +210,7 @@
     },
     {
         "team": "Ottawa Senators",
+        "abrev": "OTT",
         "conference": "Eastern",
         "division": "Atlantic",
         "points": 97,
@@ -217,6 +229,7 @@
     },
     {
         "team": "Minnesota Wild",
+        "abrev": "MIN",
         "conference": "Western",
         "division": "Central",
         "points": 97,
@@ -235,6 +248,7 @@
     },
     {
         "team": "St. Louis Blues",
+        "abrev": "STL",
         "conference": "Western",
         "division": "Central",
         "points": 96,
@@ -253,6 +267,7 @@
     },
     {
         "team": "Calgary Flames",
+        "abrev": "CGY",
         "conference": "Western",
         "division": "Pacific",
         "points": 96,
@@ -271,6 +286,7 @@
     },
     {
         "team": "New Jersey Devils",
+        "abrev": "NJD",
         "conference": "Eastern",
         "division": "Metropolitan",
         "points": 91,
@@ -289,6 +305,7 @@
     },
     {
         "team": "Montréal Canadiens",
+        "abrev": "MTL",
         "conference": "Eastern",
         "division": "Atlantic",
         "points": 91,
@@ -307,6 +324,7 @@
     },
     {
         "team": "Vancouver Canucks",
+        "abrev": "VAN",
         "conference": "Western",
         "division": "Pacific",
         "points": 90,
@@ -325,6 +343,7 @@
     },
     {
         "team": "Utah Hockey Club",
+        "abrev": "UTA",
         "conference": "Western",
         "division": "Central",
         "points": 89,
@@ -343,6 +362,7 @@
     },
     {
         "team": "Columbus Blue Jackets",
+        "abrev": "CBJ",
         "conference": "Eastern",
         "division": "Metropolitan",
         "points": 89,
@@ -361,6 +381,7 @@
     },
     {
         "team": "Detroit Red Wings",
+        "abrev": "DET",
         "conference": "Eastern",
         "division": "Atlantic",
         "points": 86,
@@ -379,6 +400,7 @@
     },
     {
         "team": "New York Rangers",
+        "abrev": "NYR",
         "conference": "Eastern",
         "division": "Metropolitan",
         "points": 85,
@@ -397,6 +419,7 @@
     },
     {
         "team": "New York Islanders",
+        "abrev": "NYI",
         "conference": "Eastern",
         "division": "Metropolitan",
         "points": 82,
@@ -415,6 +438,7 @@
     },
     {
         "team": "Pittsburgh Penguins",
+        "abrev": "PIT",
         "conference": "Eastern",
         "division": "Metropolitan",
         "points": 80,
@@ -433,6 +457,7 @@
     },
     {
         "team": "Anaheim Ducks",
+        "abrev": "ANA",
         "conference": "Western",
         "division": "Pacific",
         "points": 80,
@@ -451,6 +476,7 @@
     },
     {
         "team": "Buffalo Sabres",
+        "abrev": "BUF",
         "conference": "Eastern",
         "division": "Atlantic",
         "points": 79,
@@ -469,6 +495,7 @@
     },
     {
         "team": "Seattle Kraken",
+        "abrev": "SEA",
         "conference": "Western",
         "division": "Pacific",
         "points": 76,
@@ -487,6 +514,7 @@
     },
     {
         "team": "Boston Bruins",
+        "abrev": "BOS",
         "conference": "Eastern",
         "division": "Atlantic",
         "points": 76,
@@ -505,6 +533,7 @@
     },
     {
         "team": "Philadelphia Flyers",
+        "abrev": "PHI",
         "conference": "Eastern",
         "division": "Metropolitan",
         "points": 76,
@@ -523,6 +552,7 @@
     },
     {
         "team": "Nashville Predators",
+        "abrev": "NSH",
         "conference": "Western",
         "division": "Central",
         "points": 68,
@@ -541,6 +571,7 @@
     },
     {
         "team": "Chicago Blackhawks",
+        "abrev": "CHI",
         "conference": "Western",
         "division": "Central",
         "points": 61,
@@ -559,6 +590,7 @@
     },
     {
         "team": "San Jose Sharks",
+        "abrev": "SJS",
         "conference": "Western",
         "division": "Pacific",
         "points": 52,
