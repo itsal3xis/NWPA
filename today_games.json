@@ -1,0 +1,28 @@
+[
+  {
+    "date": "2025-05-07",
+    "venue": "Scotiabank Arena",
+    "startTimeUTC": "2025-05-07T23:00:00Z",
+    "homeTeam": {
+      "name": "Toronto Maple Leafs",
+      "abbrev": "TOR"
+    },
+    "awayTeam": {
+      "name": "Florida Panthers",
+      "abbrev": "FLA"
+    }
+  },
+  {
+    "date": "2025-05-07",
+    "venue": "Canada Life Centre",
+    "startTimeUTC": "2025-05-08T01:30:00Z",
+    "homeTeam": {
+      "name": "Winnipeg Jets",
+      "abbrev": "WPG"
+    },
+    "awayTeam": {
+      "name": "Dallas Stars",
+      "abbrev": "DAL"
+    }
+  }
+]
