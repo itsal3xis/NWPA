@@ -1,5 +1,5 @@
 import json
-import collector
+import nwpa.collector as collector
 
 with open("teamsStats.json", "r", encoding="utf-8") as f:
     data = json.load(f)

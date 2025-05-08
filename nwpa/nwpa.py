@@ -1,6 +1,6 @@
 import argparse
-import analyst
-import collector
+import nwpa.analyst as analyst
+import nwpa.collector as collector
 
 def main():
     collector.collector()
