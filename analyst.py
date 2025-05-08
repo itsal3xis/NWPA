@@ -1,11 +1,85 @@
-import random
 import json
-import collector
 
-def standings_analyst(homeTeam, awayTeam):
-    with open("teamsStats.json", "r", encoding="utf-8") as f:
-        data = json.load(f)
+with open("teamsStats.json", "r", encoding="utf-8") as f:
+    data = json.load(f)
 
-    HomeTeamWinPct = 
+def winPourcentage(abbr):
+    for team in data:
+        if team.get("abrev") == abbr:
+            wins = team.get("wins", 0)
+            games_played = team.get("gamesPlayed", 1)  # avoid division by zero
+            win_pct = (wins / games_played) * 100
+            return round(win_pct, 2)
+    
+    return f"Team '{abbr}' not found."
+
+def winPctAtHome(abbr):
+    for team in data:
+        if team.get("abrev") == abbr:
+            
+            homewins = team.get("homeWins", 0)
+            homelosses = team.get("homeLoses", 0)
+
+            total_home_games = homewins + homelosses
+            if total_home_games == 0:
+                return "No home games played."
+
+            homewin_pct = (homewins / total_home_games) * 100
+            return round(homewin_pct, 2)
+
+    return f"Team '{abbr}' not found."
+
+
+def winPctOnRoad(abbr):
+    for team in data:
+        if team.get("abrev") == abbr:
+            
+            roadwins = team.get("roadWins", 0)
+            roadlosses = team.get("roadLoses", 0)
+
+            total_road_games = roadwins + roadlosses
+            if total_road_games == 0:
+                return "No road games played."
+
+            roadwinswin_pct = (roadwins / total_road_games) * 100
+            return round(roadwinswin_pct, 2)
+
+    return f"Team '{abbr}' not found."
+
+def lossesPctAtHome(abbr):
+    for team in data:
+        if team.get("abrev") == abbr:
+            
+            homewins = team.get("homeWins", 0)
+            homelosses = team.get("homeLoses", 0)
+
+            total_home_games = homewins + homelosses
+            if total_home_games == 0:
+                return "No home games played."
+
+            homelosses_pct = (homelosses / total_home_games) * 100
+            return round(homelosses_pct, 2)
+
+    return f"Team '{abbr}' not found."
+
+def lossesPctOnRoad(abbr):
+    for team in data:
+        if team.get("abrev") == abbr:
+            
+            roadwins = team.get("roadWins", 0)
+            roadlosses = team.get("roadLoses", 0)
+
+            total_road_games = roadwins + roadlosses
+            if total_road_games == 0:
+                return "No road games played."
+
+            roadlosseswin_pct = (roadlosses / total_road_games) * 100
+            return round(roadlosseswin_pct, 2)
+
+    return f"Team '{abbr}' not found."
+
+
+
+    
 
     
