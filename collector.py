@@ -65,14 +65,43 @@ def today_schedule():
                 }
                 today_games.append(game_info)
 
-    with open("today_games.json", "w", encoding="utf-8") as f:
+    with open("todayGames.json", "w", encoding="utf-8") as f:
         json.dump(today_games, f, indent=2, ensure_ascii=False)
 
     print(f"{len(today_games)} game(s) saved to today_games.json")
 
 
-stats()
-today_schedule()
+
+def team_players(abbr, season_id):
+    url = "https://api-web.nhle.com/v1/roster/{abbr}/{season_id}"
+    url = url.format(abbr=abbr, season_id=season_id)
+    response = requests.get(url)
+    data = response.json()
+    informations = []
+    for player in data.get("players", []):
+        player_info = {
+            "name": player["fullName"],
+            "id": player["id"],
+            "position": player["position"]["default"],
+            "height": player["heightInCentimeters"],
+            "weight": player["weightInKilograms"],
+            "birthDate": player["birthDate"]
+        }
+        informations.append(player_info)
+    return informations
+
+def player_stats(player_id, season_id):
+    url = "https://api-web.nhle.com/v1/player/{player_id}/landing"
+    url = url.format(player_id=player_id)
+    response = requests.get(url)
+    data = response.json()
+
+
+
+def collector():
+    stats()
+    today_schedule()
+
 
 
     

@@ -1,0 +1,28 @@
+[
+  {
+    "date": "2025-05-08",
+    "venue": "Capital One Arena",
+    "startTimeUTC": "2025-05-08T23:00:00Z",
+    "homeTeam": {
+      "name": "Washington Capitals",
+      "abbrev": "WSH"
+    },
+    "awayTeam": {
+      "name": "Carolina Hurricanes",
+      "abbrev": "CAR"
+    }
+  },
+  {
+    "date": "2025-05-08",
+    "venue": "T-Mobile Arena",
+    "startTimeUTC": "2025-05-09T01:30:00Z",
+    "homeTeam": {
+      "name": "Vegas Golden Knights",
+      "abbrev": "VGK"
+    },
+    "awayTeam": {
+      "name": "Edmonton Oilers",
+      "abbrev": "EDM"
+    }
+  }
+]

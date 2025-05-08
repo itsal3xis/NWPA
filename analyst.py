@@ -1,7 +1,11 @@
 import json
+import collector
 
 with open("teamsStats.json", "r", encoding="utf-8") as f:
     data = json.load(f)
+
+with open("todayGames.json", "r", encoding="utf-8") as f:
+    todaysGames = json.load(f)
 
 def winPourcentage(abbr):
     for team in data:
@@ -79,7 +83,44 @@ def lossesPctOnRoad(abbr):
     return f"Team '{abbr}' not found."
 
 
+def getHomeTeam(abbr):
+    for game in todaysGames:
+        if game["homeTeam"]["abbrev"] == abbr:
+            return game["homeTeam"]["name"]
+    return False
+
+
+
+def rapid_analyst(team1_abbr, team2_abbr):
+    homeTeam = getHomeTeam(team1_abbr)
+    awayTeam = team2_abbr
+    if homeTeam == False:
+        homeTeam = team2_abbr
+        awayTeam = team1_abbr
+    
+    homeTeamWinPct = winPourcentage(homeTeam)
+    awayTeamWinPct = winPourcentage(awayTeam)
+    
+    homeTeamWinPctAtHome = winPctAtHome(homeTeam)
+    awayTeamWinPctOnRoad = winPctOnRoad(awayTeam)
+    homeTeamLossPctAtHome = lossesPctAtHome(homeTeam)
+    awayTeamLossPctOnRoad = lossesPctOnRoad(awayTeam)
+
+    homeTeamPlayer = collector.team_players(homeTeam)
+    awayTeamPlayer = collector.team_players(awayTeam)
 
     
+    
+    
+    
+
+rapid_analyst("WSH", "CAR")
+    
+
+    
+
+
+
+
 
     

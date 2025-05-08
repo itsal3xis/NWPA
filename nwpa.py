@@ -1,8 +1,9 @@
 import argparse
 import analyst
+import collector
 
 def main():
-    pass
+    collector.collector()
 
 if __name__ == "__main__":
     main()
